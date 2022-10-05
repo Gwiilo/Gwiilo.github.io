@@ -11,6 +11,7 @@
   --wide: 75%;
   --narrow: 25%;
   --font-size: 18px;
+  font-family: arial;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
   position: relative;
   --border: 1px solid #fdfaf5;
   overflow: visible;
+  --font-family: arial;
 }
 
 .center {
