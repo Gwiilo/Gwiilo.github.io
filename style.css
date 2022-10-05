@@ -1,0 +1,139 @@
+:root {
+  --grid-width: 20%;
+  --color-background: #0d1321;
+  --color-background-secondary: #1b212e;
+  --color-primary: #748cab;
+  --color-secondary: #3e5c76;
+  --color-accent: #1d2d44;
+  --color-fonts-primary: #f0ebd8;
+  --color-fonts-secondary: #0f1427;
+  --color-frequent: #a8dadc;
+  --wide: 75%;
+  --narrow: 25%;
+  --font-size: 18px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: visible;
+}
+
+.container {
+  background: var(--color-secondary);
+  height: 100%;
+  position: relative;
+  --border: 1px solid #fdfaf5;
+  overflow: visible;
+}
+
+.center {
+  background: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  --border: 3px solid #1b3557;
+  overflow: visible;
+}
+
+.topnav {
+  background-color: var(--color-background-secondary);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: var(--color-fonts-primary);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-fonts-primary);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: var(--color-secondary);
+  color: var(--color-fonts-primary);
+}
+
+/* Dark Light mode button */
+
+.lightSwitch {
+	background-color: var(--color-background);
+	border-radius:18px;
+	border:1px solid var(--color-accent);
+	display:inline-block;
+	cursor:pointer;
+	color: var(--color-font-primary);
+	font-family:Arial;
+	font-size:12px;
+	padding:12px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  position: relative;
+}
+.myButton:hover {
+	background-color: var(--color-background-secondary);
+  color: var(--color-font-secondary);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--color-frequent);
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  transition: 0.45125s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-accent);
+  transition: 0.45125s;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  transition: 0.45125s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+  transition: 0.45125s;
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
+}
+
+footer {
+  font-family: "Aroa;", Helvetica, sans-serif;
+  text-align: center;
+  padding: 3px;
+  background-color: var(--color-background-secondary);
+  color: var(--color-fonts-primary);
+}
